@@ -1,0 +1,51 @@
+.product-showcase {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+}
+
+.product {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 50px 1fr;
+}
+
+.product__meta {
+  display: flex;
+  font-size: 0.825rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product__meta > * {
+  background: hsl(0 0 0 / 0.2);
+  padding: 5px 10px;
+}
+
+.product__comments {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* extra styling */
+
+body {
+  padding: var(--size-9);
+}
+
+h2 {
+  font-size: var(--font-size-3);
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5em;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.product__meta {
+  margin-top: auto;
+}
